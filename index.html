@@ -1,0 +1,744 @@
+	<!DOCTYPE html>
+	<html lang="EN_us">
+    <head>
+	<meta charset="utf-8">
+    <title>Discord Bot Theme</title>
+	<meta name="robots" content="index, follow" />
+    <!-- SEO Meta Tagları-->
+    <meta name="description" content="Discord Bot">
+    <meta name="keywords" content="Discord Bot">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ikonlar-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Sayfa Yükleme -->
+    <style>
+      .cs-page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .cs-page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .cs-page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .cs-page-loading.active > .cs-page-loading-inner {
+        opacity: 1;
+      }
+      .cs-page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #737491;
+      }
+      .cs-page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        border: .15em solid #766df4;
+        border-right-color: transparent;
+        border-radius: 50%;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spinner {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <!-- Sayfa Yükleme Son -->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.cs-page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+	<script src="//avacadobot.pw/assets/sayilar.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="//avacadobot.pw/assets/sayilar.js"></script>
+	<link rel="stylesheet" href="https://avacadobot.pw/assets/stil.css">
+	<link rel="stylesheet" href="https://avacadobot.pw/assets/bootstrap.css">
+	<link href="https://avacadobot.pw/iframe/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="https://avacadobot.pw/assets/jquery-3.2.1.min.js"></script>
+	<script src="https://avacadobot.pw/assets/bootstrap.min.js"></script>
+	<script src="https://avacadobot.pw/assets/jquery.magnific-popup.min.js"></script>
+	</head>
+  <body>
+    <!-- Google Tag Menejer (noscript)-->
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    </noscript>
+    <!-- Yükleniyor-->
+    <div class="cs-page-loading active">
+      <div class="cs-page-loading-inner">
+        <div class="cs-page-spinner"></div><span>Yükleniyor...</span>
+		<div style="position:absolute; top:-25000px;">
+		<a href="https://avacadobot.pw/" title="Türkçe Discord Botu" rel="dofollow">Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+		<a href="https://avacadobot.pw/" title="Avacado Bot" rel="dofollow">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+		</div>
+		<div style="display: none;"> <a href="https://avacadobot.pw/" title="Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a></div>
+	  </div>
+    </div>
+    <main class="cs-page-wrapper">
+
+      <header class="cs-header navbar navbar-expand-lg navbar-dark navbar-floating navbar-sticky">
+        <div class="container px-0 px-xl-3">
+          <button class="navbar-toggler ml-n2 mr-2" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="https://avacadobot.pw"><img class="navbar-floating-logo d-none d-lg-block" width="153" src="img/logo/logo-light.png" alt="Avacado Discord Bot"/><img class="navbar-stuck-logo" width="153" src="img/logo/logo-dark.png" alt="Avacado Türkçe Discord Bot"/><img class="d-lg-none" width="58" src="img/logo/logo-icon.png" alt="Avacado Bot'u Davet Et!"/></a>
+          <div class="d-flex align-items-center order-lg-3 ml-lg-auto"><a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=729752334527365234&scope=bot&permissions=8" target="_blank" rel="noopener"><i class="fe-check-circle font-size-lg mr-2"></i>Beni Davet <span class='d-none d-lg-inline'>Et</span></a></div>
+          <div class="cs-offcanvas-collapse order-lg-2" id="primaryMenu">
+            <div class="cs-offcanvas-cap navbar-box-shadow">
+              <h5 class="mt-1 mb-0">Menu</h5>
+              <button class="close lead" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="cs-offcanvas-body">
+              <!-- Menüler-->
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://avacadobot.pw">Anasayfa</a>
+                </li>
+				 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#hakkimizda">Hakkımızda</a>
+                </li>
+				 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#komutlar">Komutlar</a>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">İletişim</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://avacadobot.pw/" target="_blank">
+                        <div class="d-flex align-items-center">
+                          <div class="font-size-xl text-muted"><i class="fe-wechat"></i></div>
+                          <div class="pl-3"><span class="text-heading">İletişim</span><small class="d-block text-muted">Web sitemiz üzerinden direkt iletişim</small></div>
+                        </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" target="_blank" href="https://discord.gg/6QNtHwn">
+                        <div class="d-flex align-items-center">
+                          <div class="font-size-xl text-muted"><i class="fe-layers"></i></div>
+                          <div class="pl-3"><span class="text-heading">Destek Sunucumuz<span class="badge badge-danger ml-2">99+</span></span><small class="d-block text-muted">Discord destek sunucumuz</small></div>
+                        </div></a></li>
+                    <li class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="mailto:support@avacadobot.pw">
+                        <div class="d-flex align-items-center">
+                          <div class="font-size-xl text-muted"><i class="fe-life-buoy"></i></div>
+                          <div class="pl-3"><span class="text-heading">Mail</span><small class="d-block text-muted">support@avacadobot.pw</small></div>
+                        </div></a></li>
+						<div style="display: none;"> <a href="https://avacadobot.pw/" title="Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a></div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="position-relative bg-dark overflow-hidden pt-7 pb-lg-7">
+        <div class="container-fluid pt-4 pb-5 pt-lg-5">
+          <div class="row align-items-center py-3">
+            <div class="col-xl-6 col-lg-5 d-flex justify-content-end">
+              <div class="pt-2 pb-3 pb-lg-0 mx-auto mb-5 mb-lg-0 ml-lg-0 mr-xl-7 text-center text-lg-left" style="max-width: 495px;">
+                <h1 class="display-4 text-light pb-2">Avacado <span class="font-weight-light">Bot </span></h1> 
+                <p class="h4 font-weight-light text-light opacity-70 line-height-base">Avacado Bot, eğlence ve moderasyon sistemleri ile sizin işinizi kolaylaştırmak için var!</p>
+				<a class="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5" href="#oy" data-scroll><span class="btn btn-icon rounded-circle border-primary"><i class="fe-activity h4 text-primary my-1"></i></span><span class="ml-3 text-primary font-weight-medium">Oy vermeyi Unutma :) </span></a>
+				<hr class="hr-light mb-3">
+               <div class="row">
+			   
+                  <div class="col-sm-3 mb-4 mb-sm-0">
+                    <div class="counter-count h1 text-light mb-1">756</div>
+                    <div class="h5 text-light font-weight-normal opacity-70 mb-2">Sunucu</div>
+					<span class="badge badge-pill badge-success">api.avacadobot.pw</span>
+					</div>
+					
+					<div class="col-sm-4">
+                    <div class="counter-count h1 text-light mb-1">24264</div>
+                    <div class="h5 text-light font-weight-normal opacity-70 mb-1">Kanal</div>
+					</div>
+					
+					<div class="col-sm-5 mb-4 mb-sm-0">
+                    <div class="counter-count h1 text-light mb-1">405430</div>
+                    <div class="h5 text-light font-weight-normal opacity-70 mb-1">Kullanıcı</div>
+					</div>
+					
+					<div style="position:absolute; top:-25000px;">
+					<a href="https://avacadobot.pw/" title="Türkçe Discord Botu" rel="dofollow">Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+					<a href="https://avacadobot.pw/" title="Avacado Bot" rel="dofollow">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+					</div>
+					
+                </div>
+              </div>
+            </div>
+			<div style="display: none;"> <a href="https://avacadobot.pw/" title="Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a></div>
+            <div class="col-xl-6 col-lg-7">
+              <div class="cs-parallax" style="max-width: 898px;">
+                <div class="cs-parallax-layer position-relative" data-depth="0.1"><img src="img/layers/layer01.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.15"><img src="img/layers/layer02.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.25"><img src="img/layers/layer03.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.35"><img src="img/layers/layer04.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.5"><img src="img/layers/layer05.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.28"><img src="img/layers/layer06.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.4"><img src="img/layers/layer07.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.5"><img src="img/layers/layer08.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.28"><img src="img/layers/layer09.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.4"><img src="img/layers/layer10.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.25"><img src="img/layers/layer11.png" alt="Layer"/>
+                </div>
+                <div class="cs-parallax-layer" data-depth="0.45"><img src="img/layers/layer12.png" alt="Layer"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cs-shape cs-shape-bottom cs-shape-curve bg-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+            <path fill="currentColor" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+          </svg>
+        </div>
+      </section>
+      <section class="bg-secondary" id="hakkimizda">
+        <div class="container pt-5 pb-4 py-md-6 py-lg-7">
+          <div class="text-center mb-5 pt-3 pt-lg-4">
+            <span class="h2 bg-faded-primary rounded text-primary px-3 py-2">Avacado</span><span class='h2 mb-4'>  Hakkında</span>
+			<br><br>
+            <p class="text-muted">Sizlerle birlikte geliştirdiğimiz, geliştirerek eğlendiğimiz eğlence komutları ile biz eğlenirken sizde eğlenin.</p>
+			<div style="position:absolute; top:-25000px;">
+			<a href="https://avacadobot.pw/" title="Türkçe Discord Botu" rel="dofollow">Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+			<a href="https://avacadobot.pw/" title="Avacado Bot" rel="dofollow">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+			</div>
+          </div>
+<section class="interior_area interior_two" style="box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);">
+<div class="container">
+<div class="interior_inner row">
+<div class="col-lg-5 offset-lg-1">
+<div class="interior_text"><br>
+<h4>Merhaba ben Aral!</h4>
+<p>Son 4 senedir yazılım & web tasarım ile ilgileniyorum. Bu 4 sene içerisinde HTML, CSS, JS, PYTHON, C#, SQL ve Database Management dillerini az buçuk öğrenmiş bulunmaktayım. Bu benim ilk projem olan Avacado başta kendimi geliştirmek için tasarladığım bir Discord projesiydi. Daha sonradan arkadaşlarımın da yardımı ile botu yüksek mertebe yerlere getirmeyi başardık. Botun genel amacı eğlence, moderasyon, anime. Eğer aklınızda soru işareti bulunuyorsa benimle discord üzerinden iletişime geçebilirsiniz.</p>
+<a class="main_btn" href="https://discord.com/oauth2/authorize?client_id=729752334527365234&amp;scope=bot&amp;permissions=8" target="_blank"
+ style="
+    padding: 0px 45px;
+    background-image: linear-gradient(to right, #7472f4 0%, #7249fb 51%, #bc2bff 100%);
+    background-size: 200% auto;
+    z-index: 2;
+    display: inline-block;
+    transition: all 400ms linear;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    line-height: 50px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 30px 0px rgb(115 73 251 / 80%);
+">BENİ DAVET ET</a>
+</div>
+</div>
+<div class="col-lg-6">
+<img class="img-fluid" src="img/sku.png" title="Avacado - Türkçe Discord Botu" style="padding: 0px 75px;">
+</div>
+</div>
+</div>
+</section>
+        </div>
+      </section>
+      <!-- Components-->
+      <section class="bg-gradient py-5 py-md-6 py-lg-7" id="komutlar">
+        <div class="container-fluid py-3 py-lg-4">
+          <div>
+            
+              <div>
+                <h2 class="h1 text-light mb-4 text-center">Avacado <span class='bg-faded-light rounded px-3 py-2'>Komutlar</span></h2><br>
+			<section>
+		<div>
+	<div>
+<div>
+<div class="col-lg-9">
+<input type="text" id="aramaKutusu" onkeyup="AvacadoAramaCubugu()" placeholder="Komut ismi ara..." title="Komut ismini girin...">
+<ul class="tabs">
+<li data-tab="unclickable">Kategoriler: </li>
+<li class="tab-link current" data-tab="tab-1">📋 Ana Kmt.</li>
+<li class="tab-link" data-tab="tab-2">⚒ Moderasyon</li>
+<li class="tab-link" data-tab="tab-3">🕵️ Kullanıcı</li>
+<li class="tab-link" data-tab="tab-4">💎 Eğlence</li>
+<li class="tab-link" data-tab="tab-5">🔞 NSFW</li>
+<li class="tab-link" data-tab="tab-6">🈚 Dil</li>
+<li data-tab="unclickable">Prefix: <b>a!</b></li></ul>
+<div style="position:absolute; top:-25000px;">
+<a href="https://avacadobot.pw/" title="Türkçe Discord Botu" rel="dofollow">Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+<a href="https://avacadobot.pw/" title="Avacado Bot" rel="dofollow">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+</div>
+</div>
+<div style="position:absolute; top:-250px;">
+<a href="https://avacadobot.pw/" title="Türkçe Discord Botu" rel="dofollow">Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+<a href="https://avacadobot.pw/" title="Avacado Bot" rel="dofollow">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+</div>
+<div class="col-lg-3"></div>
+</div>
+	</div>
+		</div>
+			</section>
+<section class="price_area p_120" id="price">
+<div class="container">
+<div id="tab-1" class="tab-content current">
+<div class="main_title">
+<h2>Ana Komutlar</h2>
+<div class="line-shape"></div>
+</div>
+<table id="📋 Ana Komutlar">
+<tbody>
+<tr class="header" style="overflow-x:auto;">
+<th style="width:20%;">Komut</th>
+<th style="width:60%;">Açıklama</th>
+<th style="width:25%;">Kullanım</th>
+</tr>
+<tr>
+<td>a!yardım</td>
+<td>Bot komutları yardım menüsünü gösterir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!davet	</td>
+<td>Botu sunucunuza davet etmek için davet linki verir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!bilgi</td>
+<td>Bot hakkında bilgi verir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!ping</td>
+<td>Botun gecikmesini gösterir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!bugbildir</td>
+<td>Bot hakkında herhangi bir hatayı yapımcılara bildirmenize yarar.</td>
+<td>a!bugbildir <b>-yazı-</b></td>
+</tr>
+<tr>
+<td>a!tavsiye</td>
+<td>Bot hakkındaki tavsiyelerinizi yapımcılara iletir.</td>
+<td>a!tavsiye <b>-yazı-</b></td>
+</tr>
+<tr>
+<td>a!ayarlar</td>
+<td>Ayarlanabilir moderasyon komutlarının durumlarını gösterir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!oyver</td>
+<td>Bota oy verebilmeniz için bağlantı verir.</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab-2" class="tab-content">
+<div class="main_title">
+<h2>Moderasyon Komutları</h2>
+<div class="line-shape"></div>
+</div>
+<table id="⚒ Moderasyon">
+<tbody>
+<tr class="header" style="overflow-x:auto;">
+<th style="width:20%;">Komut</th>
+<th style="width:60%;">Açıklama</th>
+<th style="width:25%;">Kullanım</th>
+</tr>
+<tr>
+<td>a!otorol</td>
+<td>Sunucuya giren yeni üyelere otomatik <b>rol</b> verir ve <b>log</b> tutar.</td>
+<td>a!otorol <b>@rol #kanal</b></td>
+</tr>
+<tr>
+<td>a!sil</td>
+<td>Yazdığınız <b>miktar</b> kadar mesaj siler.</td>
+<td>a!sil <b>-miktar-</b></td>
+</tr>
+<tr>
+<td>a!ototag</td>
+<td>Sunucuya yeni giren üyelerin isimlerini ayarladığınız <b>değer</b>e göre değiştirir.</td>
+<td>a!ototag <b>-değer-</b></td>
+</tr>
+<tr>
+<td>a!resimlihgbb</td>
+<td>Belirlediğiniz <b>kanal</b>a resimli hoş geldin - görüşürüz mesajı atar.</td>
+<td>a!resimlihgbb <b>#kanal</b></td>
+</tr>
+<tr>
+<td>a!sa-as</td>
+<td>Üyelerden biri selam verdiğinde Aleyküm Selam yazar.</td>
+<td>a!sa-as <b>aç</b>/<b>kapat</b></td>
+</tr>
+<tr>
+<td>a!oylama</td>
+<td>Oylama yaparsınız.</td>
+<td>a!oylama/ a!oylama -yazı-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab-3" class="tab-content">
+<div class="main_title">
+<h2>Kullanıcı Komutları</h2>
+<div class="line-shape"></div>
+</div>
+<table id="🕵️ Kullanıcı">
+<tbody>
+<tr class="header" style="overflow-x:auto;">
+<th style="width:25%;">Komut</th>
+<th style="width:52%;">Açıklama</th>
+<th style="width:45%;">Kullanım</th>
+</tr>
+<tr>
+<td>a!hatırlatıcı</td>
+<td>Girdiğiniz <b>süre</b> bitince hatırlamak istediğiniz <b>bilgi</b>yi hatırlatır.</td>
+<td>a!hatırlatıcı <b>-süre-</b> <b>-bilgi-</b></td>
+</tr>
+<tr>
+<td>a!afk</td>
+<td>AFK moduna girmenizi sağlar. etiketleyenlere AFK kalma <b>sebeb</b>ini gösterir.</td>
+<td>a!afk <b>-sebep-</b></td>
+</tr>
+<tr>
+<td>a!havadurumu</td>
+<td>Girdiğiniz <b>konum</b> için havadurumu verir.</td>
+<td>a!havadurumu <b>Kıbrıs</b></td>
+</tr>
+<tr>
+<td>a!sunucubilgi</td>
+<td>Komutu kullandığınız sunucu hakkında bilgi verir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!kullanıcıbilgi</td>
+<td>Etiketlenen kullanıcı hakkında bilgi verir.</td>
+<td>a!kullanıcıbilgi <b>@BahoG</b></td>
+</tr>
+<tr>
+<td>a!şifre</td>
+<td>Girdiğiniz <b>hane</b> sayısına göre rastgele şifre üretip size özelden gönderir.</td>
+<td>a!şifre <b>-hane-</b></td>
+</tr>
+<tr>
+<td>a!korona</td>
+<td>Korona istatistikleri hakkında bilgi verir.</td>
+<td>a!corona <b>global</b><br>a!corona <b>ülke türkiye</b></td>
+</tr>
+<tr>
+<td>a!döviz</td>
+<td>Girdiğiniz <b>Para biriminin</b> alış - satış bilgilerini verir.</td>
+<td>a!döviz <b>-Para birimi-</b><br>a!döviz <b>USD</b></td>
+</tr>
+<tr>
+<td>a!saat</td>
+<td>Türkiye'nin saatini gösterir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!yapımcım</td>
+<td>Yapımcıları gösterir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!hesapla</td>
+<td>Girdiğiniz işlemin sonucunu verir.</td>
+<td>a!hesapla <b>-işlem-</b> </td>
+</tr>
+<tr>
+<td>a!burç</td>
+<td>Girdiğiniz değere göre burcunuzu söyler</td>
+<td>a!burç <b>-ay-</b> <b>-gün-</b> </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab-4" class="tab-content">
+<div class="main_title">
+<h2>Eğlence Komutları</h2>
+<div class="line-shape"></div>
+</div>
+<table id="💎 Eğlence">
+<tbody>
+<tr class="header" style="overflow-x:auto;">
+<th style="width:20%;">Komut</th>
+<th style="width:60%;">Açıklama</th>
+<th style="width:25%;">Kullanım</th>
+</tr>
+<tr>
+<td>a!askolcer</td>
+<td><b>Etiket</b>lediğiniz kişi ile aranızdaki sevgiyi tahmin eder.</td>
+<td>a!askolcer <b>@BahoG</b></td>
+</tr>
+<tr>
+<td>a!avatar</td>
+<td><b>Etiket</b>lediğiniz kişinin fotoğrafını verir.</td>
+<td>a!avatar <b>@BahoG</b></td>
+</tr>
+<tr>
+<td>a!doğumgünü</td>
+<td>Küçük bir doğum günü pastası hediye eder.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!kaçcm</td>
+<td>💪🏻 🙃</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!sor</td>
+<td>Bota sorduğunuz soruya rastgele cevap verir.</td>
+<td>a!sor <b>-soru</b></td>
+</tr>
+<tr>
+<td>a!zar</td>
+<td>Zar atıp çıkan sayıyı gösterir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!öp</td>
+<td><b>Etiket</b>lediğiniz kişi ile aranızda güzel anlar yaşatır.</td>
+<td>a!öp <b>@BahoG</b></td>
+</tr>
+<tr>
+<td>a!wasted</td>
+<td><b>Etiket</b>lediğiniz kişinin fotoğrafına wasted efekti uygular.</td>
+<td>a!wasted <b>@BahoG</b></td>
+</tr>
+<tr>
+<td>a!kedi</td>
+<td>Rastgele kedi fotoğrafı atar.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!kartopu</td>
+<td><b>Etiket</b>lediğiniz kişiye kar topu fırlatır.</td>
+<td>a!kartopu <b>@BahoG</b></td>
+</tr>
+<tr>
+<td>a!tokat</td>
+<td><b>Etiket</b>lediğiniz kişiye tokat atar.</td>
+<td>a!tokat <b>@BahoG</b></td>
+</tr>
+<tr>
+<td>a!boksmakinesi</td>
+<td>Boks makinesine yumruk atarsınız.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!mcödül</td>
+<td>Yazdığınız <b>yazı</b>yı minecraft başarım kazanıldı ekranına ekler.</td>
+<td>a!mcödül <b>-yazı-</b></td>
+</tr>
+<tr>
+<td>a!köpek</td>
+<td>Rastgele köpek fotoğrafı atar.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!token</td>
+<td>Bot'un tokenini verir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!missionpassed</td>
+<td>Fotoğrafınıza mission passed efekti verir.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>a!qr</td>
+<td>Yazdığınız yazıyı QR kod şeklinde verir.</td>
+<td>a!qr <b>-yazı-</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab-5" class="tab-content">
+<div class="main_title">
+<h2>NSFW Komutları</h2>
+<div class="line-shape"></div>
+</div>
+<table id="🔞 NSFW">
+<tbody>
+<tr class="header" style="overflow-x:auto;">
+<th style="width:20%;">Komut</th>
+<th style="width:60%;">Açıklama</th>
+<th style="width:25%;">Kullanım</th>
+</tr>
+<tr>
+<td>a!anime</td>
+<td>Rastgele anime fotoğrafı atar. <b>(nsfw)</b></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tab-6" class="tab-content">
+<div class="main_title">
+<h2>Dil Komutları</h2>
+<div class="line-shape"></div>
+</div>
+<table id="🈚 Dil">
+<tbody>
+<tr class="header" style="overflow-x:auto;">
+<th style="width:20%;">Komut</th>
+<th style="width:60%;">Açıklama</th>
+<th style="width:25%;">Kullanım</th>
+</tr>
+<tr>
+<td>a!dil</td>
+<td>Çoklu <b>dil</b> kullanmanıza yarar</td>
+<td>a!dil <b>TR_tr</b><br>a!dil <b>EN_us</b></td>
+</tr>
+</tbody>
+	</table>
+</div>
+	</div>
+		</section>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container py-5 py-md-6 py-lg-7">
+        <div class="text-center mb-5 pt-3 pt-lg-4">
+          <h2 class="h1">Avacado <span class='bg-faded-primary rounded text-primary px-3 py-2'>Özellikler</span></h2>
+        </div>
+        <div class="row pt-3 pt-lg-4">
+          <div class="col-md-6">
+            <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+              <div class="pl-3">
+                <h3 class="h5">Öneriler ve Hatalar 🔰</h3>
+                <p class="font-size-md mb-0">Kullanıcılarımızın Avacado hakkında gönderdikleri önerilere ve hatalara önem veriyoruz.</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+              <div class="pl-3">
+                <h3 class="h5">Güçlü Sağlayıcı 🚀</h3>
+                <p class="font-size-md mb-0">Sunucumuz sayesinde Avacado komutlara ışık hızında cevap veriyor. Tamamen hatasız ve 7/24 hizmetinizde!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+              <div class="pl-3">
+                <h3 class="h5">Hızlı Destek 📞</h3>
+                <p class="font-size-md mb-0">Destek Ekibi öncülüğünde sorunlarınıza derhal çözüm buluyoruz.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-4 pb-2"><i class="fe-check-circle h4 text-success"></i>
+              <div class="pl-3">
+                <h3 class="h5">Güçlü Altyapı ⚙️</h3>
+                <p class="font-size-md mb-0">Kullanıcılarımızın daha güncel ve hızlı içeriğe ulaşabilmesi amacıyla güçlü altyapı kullanıyoruz.</p>
+              </div>
+            </div>
+            <h3 class="h5">...ve daha fazlası</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="cs-footer bg-dark pt-5 pt-md-6 pt-lg-7">
+      <div class="container pt-3 pt-md-0">
+        <div class="pb-md-4 text-center">
+          <h2 class="text-light mb-5">Geliştiricilerim</h2>
+		  <a class="btn btn-primary" href="https://discord.com/users/523145984138805250" target="_blank" rel="noopener"><i class="fe-user-check font-size-lg mr-2"></i>⌔ Ben Aral#0001</a>
+		   <a class="btn btn-primary" href="https://discord.com/users/338728357149671434" target="_blank" rel="noopener"><i class="fe-user-check font-size-lg mr-2"></i>| ⌔ Cahit | £Taypar#3111</a>
+		    <a class="btn btn-primary" href="https://discord.com/users/395697467229863937" target="_blank" rel="noopener"><i class="fe-user-check font-size-lg mr-2"></i>Rapist ᴬᶻᵃᶻᵉˡ ⌔#1010</a>
+			 <a class="btn btn-primary" href="https://discord.com/users/310046789812224000" target="_blank" rel="noopener"><i class="fe-user-check font-size-lg mr-2"></i>BahoG ⌔#0001</a>
+        </div>
+		<hr class="hr-light my-5 pb-md-4">
+		<div class="pb-md-4 text-center" id="oy">
+        <h4 class="text-light mb-grid-gutter">Oy Ver</h4>
+		<a href="https://top.gg/bot/729752334527365234/vote" target="_target" >
+		<img src="https://top.gg/api/widget/729752334527365234.svg?usernamecolor=FFFFFF&topcolor=7187dd" alt="Avacado Bot'a Oy Ver" />
+		</a>
+		</div>
+        <hr class="hr-light my-5 pb-md-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-7 pb-md-4 text-center">
+            <h4 class="text-light mb-grid-gutter">Bot Kütüphanesi</h4>
+			<a href="https://discord.js.org" target="_blank">discord.js</a>
+          </div>
+        </div>
+        <hr class="hr-light mt-5 pb-4">
+        <p class="font-size-sm text-center mb-4 py-3"><span class="text-light opacity-50 mr-1">© All rights reserved. Made by</span><a class="nav-link-style nav-link-light" href="https://discord.com/users/310046789812224000" target="_blank" rel="noopener">BahoG</a></p>
+      </div>
+	  <div style="display: none;"> <a href="https://avacadobot.pw/" title="Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a></div>
+	  <div style="position:absolute; top:-250px;">
+      <a href="https://avacadobot.pw/" title="Türkçe Discord Botu" rel="dofollow">Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+      <a href="https://avacadobot.pw/" title="Avacado Bot" rel="dofollow">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+      </div>
+	  <div style="position:absolute; top:-25000px;">
+	  <a href="https://avacadobot.pw/" title="Türkçe Discord Botu" rel="dofollow">Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+	  <a href="https://avacadobot.pw/" title="Avacado Bot" rel="dofollow">Avacado Bot, Türkçe Discord Botu, Discord Public Bot, Discord Fun Bot, Discord Bot, Discord Bots, Discord Verified Bot, Discord.js</a> 
+	  </div>
+	</footer>
+
+	<a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon fe-arrow-up"></i></a>
+
+<script src="//avacadobot.pw/assets/sayilar.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://avacadobot.pw/assets/jquery-3.2.1.min.js"></script>
+<script src="https://avacadobot.pw/assets/jquery.ajaxchimp.min.js"></script>
+<link rel="stylesheet" media="screen" href="https://avacadobot.pw/assets/simplebar.min.css"/>
+<link rel="stylesheet" href="https://avacadobot.pw/assets/stil.css">
+<link rel="stylesheet" href="https://avacadobot.pw/assets/bootstrap.css">
+<script src="https://avacadobot.pw/assets/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" media="screen" href="https://demo.createx.studio/around/css/theme.min.css">
+<script src="https://avacadobot.pw/assets/bs-custom-file-input.min.js"></script>
+<script src="https://avacadobot.pw/assets/simplebar.min.js"></script>
+<script src="https://avacadobot.pw/assets/smooth-scroll.polyfills.min.js"></script>
+<script src="https://avacadobot.pw/assets/parallax.min.js"></script>
+<script src="https://avacadobot.pw/assets/theme.min.js"></script>
+<script src="https://avacadobot.pw/assets/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+  </body>
+</html>
